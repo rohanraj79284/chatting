@@ -30,10 +30,8 @@ io.on('connection',(socket)=>{
 
 
 app.get("/",(req,res,next)=>{
-    const options = {
-        root: path.join(__dirname)
-    };
-    res.sendFile("index.html",options);
+    
+    res.sendFile(path.join(__dirname+"index.html"));
 })
 
 
